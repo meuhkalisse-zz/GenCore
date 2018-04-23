@@ -9,3 +9,14 @@ C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.DataAccesLayer\bi
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.DataAccesLayer\bin\Debug\netcoreapp2.0\GenCore.Domain.pdb
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.DataAccesLayer\obj\Debug\netcoreapp2.0\GenCore.DataAccesLayer.dll
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.DataAccesLayer\obj\Debug\netcoreapp2.0\GenCore.DataAccesLayer.pdb
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.DataAccesLayer\bin\Debug\netcoreapp2.0\GenCore.DataAccesLayer.deps.json
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.DataAccesLayer\bin\Debug\netcoreapp2.0\GenCore.DataAccesLayer.dll
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.DataAccesLayer\bin\Debug\netcoreapp2.0\GenCore.DataAccesLayer.pdb
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.DataAccesLayer\bin\Debug\netcoreapp2.0\GenCore.Domain.dll
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.DataAccesLayer\bin\Debug\netcoreapp2.0\GenCore.Domain.pdb
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.DataAccesLayer\obj\Debug\netcoreapp2.0\GenCore.DataAccesLayer.csprojResolveAssemblyReference.cache
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.DataAccesLayer\obj\Debug\netcoreapp2.0\GenCore.DataAccesLayer.csproj.CoreCompileInputs.cache
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.DataAccesLayer\obj\Debug\netcoreapp2.0\GenCore.DataAccesLayer.AssemblyInfoInputs.cache
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.DataAccesLayer\obj\Debug\netcoreapp2.0\GenCore.DataAccesLayer.AssemblyInfo.cs
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.DataAccesLayer\obj\Debug\netcoreapp2.0\GenCore.DataAccesLayer.dll
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.DataAccesLayer\obj\Debug\netcoreapp2.0\GenCore.DataAccesLayer.pdb

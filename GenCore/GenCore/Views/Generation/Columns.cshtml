@@ -9,7 +9,7 @@
     @ViewBag.TableName;
 </p>
 <p>
-    @Html.ActionLink("Generate class", "Generate", "Generation", new { pCatalog = ViewBag.Catalog, pTableName = ViewBag.TableName }, null)
+    @Html.ActionLink("Download", "DownloadClass", "Generation", new { pCatalog = ViewBag.Catalog, pTableName = ViewBag.TableName }, null)
 </p>
 
 <table class="table">

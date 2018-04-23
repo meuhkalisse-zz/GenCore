@@ -6,3 +6,12 @@ C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Domain\obj\Debug\
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Domain\obj\Debug\netcoreapp2.0\GenCore.Domain.AssemblyInfo.cs
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Domain\obj\Debug\netcoreapp2.0\GenCore.Domain.dll
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Domain\obj\Debug\netcoreapp2.0\GenCore.Domain.pdb
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Domain\bin\Debug\netcoreapp2.0\GenCore.Domain.deps.json
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Domain\bin\Debug\netcoreapp2.0\GenCore.Domain.dll
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Domain\bin\Debug\netcoreapp2.0\GenCore.Domain.pdb
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Domain\obj\Debug\netcoreapp2.0\GenCore.Domain.csprojResolveAssemblyReference.cache
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Domain\obj\Debug\netcoreapp2.0\GenCore.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Domain\obj\Debug\netcoreapp2.0\GenCore.Domain.AssemblyInfoInputs.cache
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Domain\obj\Debug\netcoreapp2.0\GenCore.Domain.AssemblyInfo.cs
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Domain\obj\Debug\netcoreapp2.0\GenCore.Domain.dll
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Domain\obj\Debug\netcoreapp2.0\GenCore.Domain.pdb

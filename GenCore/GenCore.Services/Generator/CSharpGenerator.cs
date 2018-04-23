@@ -1,7 +1,7 @@
 ﻿using GenCore.Domain;
-using GenCore.Services.Constants;
-using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
 using System.Text;
 
 namespace GenCore.Services.Generator
@@ -14,21 +14,27 @@ namespace GenCore.Services.Generator
     {
         public string GenerateClass(string pClassName, List<Columns> pPropertyList)
         {
+            var path = GetClassTemplatePath();
+            string template = File.ReadAllText(path);
+            template = template.Replace("{{ProjectName}}", "VetReseau").Replace("{{ClassName}}", pClassName);
             StringBuilder sb = new StringBuilder();
-            sb.Append(string.Format(CSharpConstant.EntityFileStart, pClassName));
             foreach (Columns c in pPropertyList)
             {
                 sb.AppendLine(GenerateProperty(c));
             }
-            sb.AppendLine(CSharpConstant.EntityFileEnd);
-            return sb.ToString();
+            return template.Replace("{{Properties}}", sb.ToString());
+        }
+
+        public string GetClassTemplatePath()
+        {
+            var dirPath = Assembly.GetExecutingAssembly().Location;
+            dirPath = dirPath.Substring(0, dirPath.LastIndexOf('\\'));
+            return Path.GetFullPath(Path.Combine(dirPath, "Content\\ClassTemplate.txt"));
         }
 
         private string GenerateProperty(Columns c)
         {
-            StringBuilder sb = new StringBuilder();
-            sb.Append(string.Format("public virtual {0} {1} {{ get; set; }}", GetPropertyType(c), c.COLUMN_NAME));
-            return sb.ToString();
+            return string.Format("public virtual {0} {1} {{ get; set; }}", GetPropertyType(c), c.COLUMN_NAME);
         }
 
         private string GetPropertyType(Columns column)

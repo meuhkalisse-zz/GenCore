@@ -1,0 +1,10 @@
+﻿using System;
+using {{ProjectName}}.Domain.Base;
+
+namespace {{ProjectName}}.Domain
+{
+    public class {{ClassName}} : IBaseEntity
+    {
+        {{Properties}}
+    }
+}

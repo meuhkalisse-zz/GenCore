@@ -9,4 +9,10 @@
     <ProjectReference Include="..\GenCore.Domain\GenCore.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Content\ClassTemplate.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
