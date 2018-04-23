@@ -16,6 +16,8 @@ namespace GenCore.DataAccesLayer.Configuration
             Map(x => x.NUMERIC_PRECISION);
             Map(x => x.NUMERIC_SCALE);
             Map(x => x.ORDINAL_POSITION);
+            Map(x => x.TABLE_CATALOG);
+            Map(x => x.TABLE_NAME);
         }
     }
 }

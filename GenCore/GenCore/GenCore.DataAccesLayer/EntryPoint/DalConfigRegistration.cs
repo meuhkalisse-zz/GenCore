@@ -27,6 +27,7 @@ namespace GenCore.DataAccesLayer.EntryPoint
         private void RegisterProvider(ref ContainerBuilder pContainer)
         {
             pContainer.Register<IColumnsProvider>(context => new ColumnsProvider(new Repository<Columns>(context.Resolve<ISession>())));
+            pContainer.Register<ITablesProvider>(context => new TablesProvider(new Repository<Tables>(context.Resolve<ISession>())));
         }
     }
 }

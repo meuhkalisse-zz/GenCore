@@ -8,6 +8,7 @@ namespace GenCore.Services
     public interface IColumnsService
     {
         List<Columns> GetAll();
+        List<Columns> GetAllByCatalogAndTableName(string pCatalog, string pTableName);
     }
 
     internal class ColumnsService : IColumnsService
@@ -22,6 +23,11 @@ namespace GenCore.Services
         public List<Columns> GetAll()
         {
             return _columnsProvider.GetAll().ToList();
+        }
+
+        public List<Columns> GetAllByCatalogAndTableName(string pCatalog, string pTableName)
+        {
+            return _columnsProvider.GetAllForCatalogAndTableName(pCatalog, pTableName);
         }
     }
 }

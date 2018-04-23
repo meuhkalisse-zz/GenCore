@@ -1,0 +1,75 @@
+﻿@model IEnumerable<GenCore.Domain.Columns>
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h2>View</h2>
+<p>
+    @ViewBag.TableName;
+</p>
+<p>
+    @Html.ActionLink("Generate class", "Generate", "Generation", new { pCatalog = ViewBag.Catalog, pTableName = ViewBag.TableName }, null)
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.COLUMN_NAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ORDINAL_POSITION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.COLUMN_DEFAULT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IS_NULLABLE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DATA_TYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CHARACTER_MAXIMUM_LENGTH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NUMERIC_PRECISION)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NUMERIC_SCALE)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.COLUMN_NAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ORDINAL_POSITION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.COLUMN_DEFAULT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IS_NULLABLE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DATA_TYPE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CHARACTER_MAXIMUM_LENGTH)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NUMERIC_PRECISION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NUMERIC_SCALE)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

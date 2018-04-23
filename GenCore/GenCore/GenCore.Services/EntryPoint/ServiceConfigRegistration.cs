@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using GenCore.DataAccesLayer.Provider;
+using GenCore.Services.Generator;
 
 namespace GenCore.Services.EntryPoint
 {
@@ -13,6 +14,8 @@ namespace GenCore.Services.EntryPoint
         private static void RegisterServices(ref ContainerBuilder pContainer)
         {
             pContainer.Register<IColumnsService>(context => new ColumnsService(context.Resolve<IColumnsProvider>()));
+            pContainer.Register<ITablesService>(context => new TablesService(context.Resolve<ITablesProvider>()));
+            pContainer.Register<ICSharpGenerator>(context => new CSharpGenerator());
         }
     }
 }

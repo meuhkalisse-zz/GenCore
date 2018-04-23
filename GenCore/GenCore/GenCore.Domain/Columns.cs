@@ -12,5 +12,7 @@ namespace GenCore.Domain
         public virtual int CHARACTER_MAXIMUM_LENGTH { get; set; }
         public virtual int NUMERIC_PRECISION { get; set; }
         public virtual int NUMERIC_SCALE { get; set; }
+        public virtual string TABLE_CATALOG { get; set; }
+        public virtual string TABLE_NAME { get; set; }
     }
 }

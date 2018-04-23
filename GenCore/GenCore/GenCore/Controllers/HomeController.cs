@@ -11,14 +11,8 @@ namespace GenCore.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IColumnsService _columnsService;
-        public HomeController(IColumnsService pColumnsService)
-        {
-            _columnsService = pColumnsService;
-        }
         public IActionResult Index()
         {
-            var t = _columnsService.GetAll();
             return View();
         }
 

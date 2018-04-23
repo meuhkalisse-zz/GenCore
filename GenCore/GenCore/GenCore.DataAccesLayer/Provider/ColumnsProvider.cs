@@ -8,6 +8,7 @@ namespace GenCore.DataAccesLayer.Provider
 {
     public interface IColumnsProvider : IBaseProvider<Columns>
     {
+        List<Columns> GetAllForCatalogAndTableName(string pCatalog, string pTableName);
     }
 
     internal class ColumnsProvider : IColumnsProvider
@@ -31,6 +32,11 @@ namespace GenCore.DataAccesLayer.Provider
         public IList<Columns> GetAll()
         {
             return _repository.GetAll().ToList();
+        }
+
+        public List<Columns> GetAllForCatalogAndTableName(string pCatalog, string pTableName)
+        {
+            return _repository.GetAll().Where(x => x.TABLE_CATALOG == pCatalog && x.TABLE_NAME == pTableName).ToList();
         }
 
         public Columns GetById(Guid pId)

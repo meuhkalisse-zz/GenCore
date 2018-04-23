@@ -1,0 +1,43 @@
+﻿@model IEnumerable<GenCore.Domain.Tables>
+
+@{
+    ViewData["Title"] = "Tables";
+}
+
+<h2>Tables</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TABLE_CATALOG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TABLE_NAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TABLE_TYPE)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TABLE_CATALOG)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TABLE_NAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TABLE_TYPE)
+                </td>
+                <td>
+                    @Html.ActionLink("Generate class", "Columns", "Generation", new { pCatalog = item.TABLE_CATALOG, pName = item.TABLE_NAME }, null)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

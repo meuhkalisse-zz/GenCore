@@ -59,6 +59,10 @@ namespace GenCore
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(
+                    name: "generateTable",
+                    template: "{controller=Generation}/{action=Generate}/{pCatalog}/{pName}"
+                    );
             });
         }
     }
