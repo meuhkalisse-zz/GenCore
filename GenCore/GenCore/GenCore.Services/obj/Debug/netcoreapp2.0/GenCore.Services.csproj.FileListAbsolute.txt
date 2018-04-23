@@ -1,0 +1,13 @@
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Services\bin\Debug\netcoreapp2.0\GenCore.Services.deps.json
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Services\bin\Debug\netcoreapp2.0\GenCore.Services.dll
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Services\bin\Debug\netcoreapp2.0\GenCore.Services.pdb
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Services\bin\Debug\netcoreapp2.0\GenCore.DataAccesLayer.dll
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Services\bin\Debug\netcoreapp2.0\GenCore.Domain.dll
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Services\bin\Debug\netcoreapp2.0\GenCore.DataAccesLayer.pdb
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Services\bin\Debug\netcoreapp2.0\GenCore.Domain.pdb
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Services\obj\Debug\netcoreapp2.0\GenCore.Services.csprojResolveAssemblyReference.cache
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Services\obj\Debug\netcoreapp2.0\GenCore.Services.csproj.CoreCompileInputs.cache
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Services\obj\Debug\netcoreapp2.0\GenCore.Services.AssemblyInfoInputs.cache
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Services\obj\Debug\netcoreapp2.0\GenCore.Services.AssemblyInfo.cs
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Services\obj\Debug\netcoreapp2.0\GenCore.Services.dll
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore.Services\obj\Debug\netcoreapp2.0\GenCore.Services.pdb

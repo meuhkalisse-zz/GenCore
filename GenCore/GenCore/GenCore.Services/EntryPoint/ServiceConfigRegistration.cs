@@ -3,7 +3,7 @@ using GenCore.DataAccesLayer.Provider;
 
 namespace GenCore.Services.EntryPoint
 {
-    public class ServiceConfigRegistration
+    public class ServiceConfigRegistration : Module
     {
         public static void AutofacRegister(ref ContainerBuilder pContainer)
         {

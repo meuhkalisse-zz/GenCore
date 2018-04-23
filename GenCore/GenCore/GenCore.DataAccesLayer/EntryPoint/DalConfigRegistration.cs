@@ -8,12 +8,14 @@ using System.Text;
 
 namespace GenCore.DataAccesLayer.EntryPoint
 {
-    public static class DalConfigRegistration
+    public class DalConfigRegistration : Module
     {
-        public static void AutofacRegister(ref ContainerBuilder pContainer, string pConnectionString)
+        public string ConnectionString { get; set; }
+
+        protected override void Load(ContainerBuilder builder)
         {
-            RegisterDataAccessComponent(ref pContainer, pConnectionString);
-            RegisterProvider(ref pContainer);
+            RegisterDataAccessComponent(ref builder, "");
+            RegisterProvider(ref builder);
         }
 
         private static void RegisterDataAccessComponent(ref ContainerBuilder pContainer, string pConnectionString)
