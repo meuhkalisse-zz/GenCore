@@ -14,17 +14,17 @@ namespace GenCore.DataAccesLayer.EntryPoint
 
         protected override void Load(ContainerBuilder builder)
         {
-            RegisterDataAccessComponent(ref builder, "");
+            RegisterDataAccessComponent(ref builder);
             RegisterProvider(ref builder);
         }
 
-        private static void RegisterDataAccessComponent(ref ContainerBuilder pContainer, string pConnectionString)
+        private void RegisterDataAccessComponent(ref ContainerBuilder pContainer)
         {
-            pContainer.Register<ISessionManager>(context => new NHibernateSessionManager(pConnectionString)).SingleInstance();
+            pContainer.Register<ISessionManager>(context => new NHibernateSessionManager(ConnectionString)).SingleInstance();
             pContainer.Register<ISession>(context => context.Resolve<ISessionManager>().OpenSession()).InstancePerLifetimeScope();
         }
 
-        private static void RegisterProvider(ref ContainerBuilder pContainer)
+        private void RegisterProvider(ref ContainerBuilder pContainer)
         {
             pContainer.Register<IColumnsProvider>(context => new ColumnsProvider(new Repository<Columns>(context.Resolve<ISession>())));
         }

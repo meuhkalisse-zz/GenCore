@@ -8,6 +8,7 @@ namespace GenCore.DataAccesLayer.Configuration
         public ColumnsMap()
         {
             Schema("INFORMATION_SCHEMA");
+            Id(x => x.COLUMN_NAME);
             Map(x => x.CHARACTER_MAXIMUM_LENGTH);
             Map(x => x.COLUMN_DEFAULT);
             Map(x => x.DATA_TYPE);
