@@ -9,3 +9,9 @@ C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore\obj\Debug\netcore
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore\obj\Debug\netcoreapp2.0\GenCore.AssemblyInfo.cs
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore\obj\Debug\netcoreapp2.0\GenCore.dll
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore\obj\Debug\netcoreapp2.0\GenCore.pdb
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore\bin\Debug\netcoreapp2.0\GenCore.DataAccesLayer.dll
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore\bin\Debug\netcoreapp2.0\GenCore.Domain.dll
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore\bin\Debug\netcoreapp2.0\GenCore.Services.dll
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore\bin\Debug\netcoreapp2.0\GenCore.DataAccesLayer.pdb
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore\bin\Debug\netcoreapp2.0\GenCore.Services.pdb
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\GenCore\bin\Debug\netcoreapp2.0\GenCore.Domain.pdb

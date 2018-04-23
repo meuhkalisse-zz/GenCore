@@ -5,9 +5,9 @@ namespace GenCore.Services.EntryPoint
 {
     public class ServiceConfigRegistration : Module
     {
-        public static void AutofacRegister(ref ContainerBuilder pContainer)
+        protected override void Load(ContainerBuilder builder)
         {
-            RegisterServices(ref pContainer);
+            RegisterServices(ref builder);
         }
 
         private static void RegisterServices(ref ContainerBuilder pContainer)

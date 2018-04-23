@@ -5,13 +5,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using GenCore.Models;
+using GenCore.Services;
 
 namespace GenCore.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IColumnsService _columnsService;
+        public HomeController(IColumnsService pColumnsService)
+        {
+            _columnsService = pColumnsService;
+        }
         public IActionResult Index()
         {
+            var t = _columnsService.GetAll();
             return View();
         }
 

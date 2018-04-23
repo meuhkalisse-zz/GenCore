@@ -21,7 +21,7 @@ namespace GenCore.DataAccesLayer.EntryPoint
         private static void RegisterDataAccessComponent(ref ContainerBuilder pContainer, string pConnectionString)
         {
             pContainer.Register<ISessionManager>(context => new NHibernateSessionManager(pConnectionString)).SingleInstance();
-            pContainer.Register<ISession>(context => context.Resolve<ISessionManager>().OpenSession()).InstancePerRequest();
+            pContainer.Register<ISession>(context => context.Resolve<ISessionManager>().OpenSession()).InstancePerLifetimeScope();
         }
 
         private static void RegisterProvider(ref ContainerBuilder pContainer)

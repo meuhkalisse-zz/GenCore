@@ -34,7 +34,8 @@ namespace GenCore
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
-            builder.RegisterModule(new DalConfigRegistration { ConnectionString = "" });
+            var connection = Configuration["ConnectionStrings:Testing"];
+            builder.RegisterModule(new DalConfigRegistration { ConnectionString = connection });
             builder.RegisterModule(new ServiceConfigRegistration());
         }
 
