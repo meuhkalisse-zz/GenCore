@@ -3457,11 +3457,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore\\GenCore.DataAccesLayer\\GenCore.DataAccesLayer.csproj",
+      "projectUniqueName": "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore.DataAccesLayer\\GenCore.DataAccesLayer.csproj",
       "projectName": "GenCore.DataAccesLayer",
-      "projectPath": "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore\\GenCore.DataAccesLayer\\GenCore.DataAccesLayer.csproj",
+      "projectPath": "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore.DataAccesLayer\\GenCore.DataAccesLayer.csproj",
       "packagesPath": "C:\\Users\\ggrondin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore\\GenCore.DataAccesLayer\\obj\\",
+      "outputPath": "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore.DataAccesLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -3483,8 +3483,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore\\GenCore.Domain\\GenCore.Domain.csproj": {
-              "projectPath": "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore\\GenCore.Domain\\GenCore.Domain.csproj"
+            "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore.Domain\\GenCore.Domain.csproj": {
+              "projectPath": "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore.Domain\\GenCore.Domain.csproj"
             }
           }
         }

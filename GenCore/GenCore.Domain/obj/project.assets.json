@@ -674,11 +674,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore\\GenCore.Domain\\GenCore.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore.Domain\\GenCore.Domain.csproj",
       "projectName": "GenCore.Domain",
-      "projectPath": "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore\\GenCore.Domain\\GenCore.Domain.csproj",
+      "projectPath": "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore.Domain\\GenCore.Domain.csproj",
       "packagesPath": "C:\\Users\\ggrondin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore\\GenCore.Domain\\obj\\",
+      "outputPath": "C:\\Users\\ggrondin\\Documents\\Gab\\Source\\GenCore\\GenCore.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
