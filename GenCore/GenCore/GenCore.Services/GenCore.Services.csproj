@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GenCore.DataAccesLayer\GenCore.DataAccesLayer.csproj" />
+    <ProjectReference Include="..\GenCore.Domain\GenCore.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
