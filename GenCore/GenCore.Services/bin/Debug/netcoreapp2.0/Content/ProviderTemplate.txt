@@ -1,0 +1,45 @@
+﻿using {{ProjectName}}.Domain;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace {{ProjectName}}.DataAccesLayer.Provider
+{
+    public interface I{{EntityName}}Provider : IBaseProvider<{{EntityName}}>
+    {
+    }
+
+    internal class {{EntityName}}Provider : I{{EntityName}}Provider
+    {
+        private readonly IRepository<{{EntityName}}> _repository;
+        public {{EntityName}}Provider(IRepository<{{EntityName}}> pRepository)
+        {
+            _repository = pRepository;
+        }
+
+        public void Create({{EntityName}} pEntity)
+        {
+            _repository.Create(pEntity);
+        }
+
+        public void Delete(Guid pId)
+        {
+            _repository.Delete(pId);
+        }
+
+        public IList<{{EntityName}}> GetAll()
+        {
+            return _repository.GetAll().ToList();
+        }
+
+        public {{EntityName}} GetById(Guid pId)
+        {
+            return _repository.GetById(pId);
+        }
+
+        public void Update({{EntityName}} entity)
+        {
+            _repository.Update(entity);
+        }
+    }
+}

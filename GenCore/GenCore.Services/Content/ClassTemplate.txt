@@ -3,7 +3,7 @@ using {{ProjectName}}.Domain.Base;
 
 namespace {{ProjectName}}.Domain
 {
-    public class {{ClassName}} : IBaseEntity
+    public class {{ClassName}} : {{ExtendedClassName}}
     {
         {{Properties}}
     }

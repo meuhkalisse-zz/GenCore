@@ -25,3 +25,5 @@ C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Services\obj\Debug\netcor
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Services\obj\Debug\netcoreapp2.0\GenCore.Services.dll
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Services\obj\Debug\netcoreapp2.0\GenCore.Services.pdb
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Services\bin\Debug\netcoreapp2.0\Content\ClassTemplate.txt
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Services\bin\Debug\netcoreapp2.0\Content\PropertyTemplate.txt
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore.Services\bin\Debug\netcoreapp2.0\Content\ProviderTemplate.txt

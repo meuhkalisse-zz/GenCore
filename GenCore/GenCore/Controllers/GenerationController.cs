@@ -4,8 +4,10 @@ using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Threading.Tasks;
+using GenCore.Domain;
 using GenCore.Services;
 using GenCore.Services.Generator;
+using GenCore.Services.TemplateGenerator.ClassGenerator;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GenCore.Controllers
@@ -15,6 +17,12 @@ namespace GenCore.Controllers
         private readonly ITablesService _tablesService;
         private readonly IColumnsService _columnsService;
         private readonly ICSharpGenerator _cSharpGenerator;
+
+        private readonly Dictionary<string, bool> _providerFolderList = new Dictionary<string, bool>()
+        {
+            { "provider/base/", true },
+            { "provider/extended/", false }
+        };
 
         public GenerationController(ITablesService pTablesService, IColumnsService pColumnsService, ICSharpGenerator pCSharpGenerator)
         {
@@ -41,7 +49,7 @@ namespace GenCore.Controllers
         public IActionResult Generate(string pCatalog, string pTableName)
         {
             var colList = _columnsService.GetAllByCatalogAndTableName(pCatalog, pTableName);
-            ViewBag.ClassGen = _cSharpGenerator.GenerateClass(pTableName, colList);
+            //ViewBag.ClassGen = _cSharpGenerator.GenerateClass(pTableName, colList);
             return View();
         }
 
@@ -49,43 +57,32 @@ namespace GenCore.Controllers
         {
             var colList = _columnsService.GetAllByCatalogAndTableName(pCatalog, pTableName);
             string name = pTableName + ".cs";
-            string file = _cSharpGenerator.GenerateClass(pTableName, colList);
+            string file = _cSharpGenerator.GenerateClass(ClassGeneratorFactory.GetGenerator<ClassGenerator>(ClassTemplateType.BASE, pTableName), colList);
             System.Text.Encoding enc = System.Text.Encoding.Unicode;
             MemoryStream str = new MemoryStream(enc.GetBytes(file));
 
             return File(str, "text/plain", name);
         }
 
-        public FileStreamResult DownloadAllClass(string pCatalog)
+        public ActionResult DownloadAllClass(string pCatalog)
         {
-            var fileList = new List<FileStream>();
-            var tables = _tablesService.GetAll();
+            return File(_cSharpGenerator.GenerateAll(pCatalog).ToArray(), "application/zip", "Generations.zip");
+        }
 
-            using (var memoryStream = new MemoryStream())
+        public void GenerateProviders(ZipArchive pArchive, string pTableName)
+        {
+            foreach (var entry in _providerFolderList)
             {
-                using (var archive = new ZipArchive(memoryStream, ZipArchiveMode.Create, true))
+                var demoFile = pArchive.CreateEntry(entry.Key + pTableName + "Provider.cs");
+                string file = _cSharpGenerator.GenerateProvider(pTableName, entry.Value);
+                using (var entryStream = demoFile.Open())
                 {
-                    foreach (var table in tables)
+                    using (var streamWriter = new StreamWriter(entryStream))
                     {
-                        var colList = _columnsService.GetAllByCatalogAndTableName(pCatalog, table.TABLE_NAME);
-                        var demoFile = archive.CreateEntry(table.TABLE_NAME + ".cs");
-                        string file = _cSharpGenerator.GenerateClass(table.TABLE_NAME, colList);
-                        using (var entryStream = demoFile.Open())
-                        {
-                            using (var streamWriter = new StreamWriter(entryStream))
-                            {
-                                streamWriter.Write(file);
-                            }
-                        }
+                        streamWriter.Write(file);
                     }
-
                 }
-
-                return File(memoryStream, "application/zip", "Generations.zip");
             }
-
-
-
         }
     }
 }

@@ -15,7 +15,7 @@ namespace GenCore.Services.EntryPoint
         {
             pContainer.Register<IColumnsService>(context => new ColumnsService(context.Resolve<IColumnsProvider>()));
             pContainer.Register<ITablesService>(context => new TablesService(context.Resolve<ITablesProvider>()));
-            pContainer.Register<ICSharpGenerator>(context => new CSharpGenerator());
+            pContainer.Register<ICSharpGenerator>(context => new CSharpGenerator(new TablesService(context.Resolve<ITablesProvider>()), new ColumnsService(context.Resolve<IColumnsProvider>())));
         }
     }
 }

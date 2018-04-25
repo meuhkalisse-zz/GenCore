@@ -36,7 +36,7 @@ namespace GenCore.DataAccesLayer.Provider
 
         public List<Columns> GetAllForCatalogAndTableName(string pCatalog, string pTableName)
         {
-            return _repository.GetAll().Where(x => x.TABLE_CATALOG == pCatalog && x.TABLE_NAME == pTableName).ToList();
+            return _repository.GetAllToFilter().Where(x => x.TABLE_CATALOG == pCatalog && x.TABLE_NAME == pTableName).List().ToList();
         }
 
         public Columns GetById(Guid pId)

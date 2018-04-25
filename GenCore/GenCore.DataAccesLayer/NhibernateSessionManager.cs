@@ -92,7 +92,7 @@ namespace GenCore.DataAccesLayer
         {
             var session = pFactory.OpenSession();
             session.BeginTransaction();
-
+            session.FlushMode = FlushMode.Manual;
             return session;
         }
 

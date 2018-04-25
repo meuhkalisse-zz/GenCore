@@ -33,3 +33,5 @@ C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\obj\Debug\netcoreapp2.0\G
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\obj\Debug\netcoreapp2.0\GenCore.dll
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\obj\Debug\netcoreapp2.0\GenCore.pdb
 C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\bin\Debug\netcoreapp2.0\Content\ClassTemplate.txt
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\bin\Debug\netcoreapp2.0\Content\PropertyTemplate.txt
+C:\Users\ggrondin\Documents\Gab\Source\GenCore\GenCore\bin\Debug\netcoreapp2.0\Content\ProviderTemplate.txt
